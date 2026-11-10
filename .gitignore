@@ -1,0 +1,9 @@
+# donnees telechargees ou copiees sur le disque du service : reproductibles par src/
+data/raw/*.dat
+data/silver/
+data/gold/
+__pycache__/
+.venv/
+*.pyc
+.DS_Store
+data/scale/
