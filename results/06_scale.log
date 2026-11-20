@@ -1,0 +1,26 @@
+== 2026-11-21 17:31:35 | user-r-combe-tamain-ece | DEBUT 06_scale
+== 2026-11-21 17:31:37 | user-r-combe-tamain-ece | copie locale du brut depuis S3
+total 3820
+-rw-r--r-- 1 onyxia users  396896 Nov 21 17:13 airlines.dat
+-rw-r--r-- 1 onyxia users 1127225 Nov 21 17:13 airports.dat
+-rw-r--r-- 1 onyxia users     504 Nov 21 17:13 MANIFEST.txt
+-rw-r--r-- 1 onyxia users 2377148 Nov 21 17:13 routes.dat
+== 2026-11-21 17:31:39 | user-r-combe-tamain-ece | mesure du passage a l'echelle
+x1    DuckDB  CSV           2.4 Mo  mediane       345 ms
+x1    DuckDB  Parquet       0.5 Mo  mediane       163 ms
+x100  DuckDB  CSV         237.7 Mo  mediane      3404 ms
+x100  DuckDB  Parquet      45.6 Mo  mediane       414 ms
+x10   DuckDB  CSV          23.8 Mo  mediane       672 ms
+x10   DuckDB  Parquet       4.6 Mo  mediane       178 ms
+WARNING: Using incubator modules: jdk.incubator.vector
+x1    Spark   CSV           2.4 Mo  mediane      1275 ms
+x1    Spark   Parquet       0.5 Mo  mediane       932 ms
+x10   Spark   CSV          23.8 Mo  mediane      1691 ms
+x10   Spark   Parquet       4.6 Mo  mediane       777 ms
+x100  Spark   CSV           2.4 Mo  mediane      6839 ms
+x100  Spark   Parquet       0.5 Mo  mediane      1423 ms
+Resultats identiques entre moteurs et formats pour chaque facteur : OUI
+SCALE TEST OK -> /home/onyxia/work/bigdata_project/results/scale_test.csv
+== 2026-11-21 17:33:16 | user-r-combe-tamain-ece | espace disque utilise par les jeux repliques
+301M	/home/onyxia/work/bigdata_project/data/scale
+== 2026-11-21 17:33:17 | user-r-combe-tamain-ece | FIN 06_scale

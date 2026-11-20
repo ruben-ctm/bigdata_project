@@ -1,0 +1,35 @@
+== 2026-11-21 17:19:51 | user-r-combe-tamain-ece | DEBUT 03_gold
+== 2026-11-21 17:19:52 | user-r-combe-tamain-ece | gold : construction de hubs
+WARNING: Using incubator modules: jdk.incubator.vector
+=== TOP 10 HUBS (apres nettoyage) ===
++----------+----+------------------------------------------------+--------------+----------+--------------+--------+------------+
+|rank_clean|iata|name                                            |country       |routes_out|routes_out_raw|rank_raw|airlines_out|
++----------+----+------------------------------------------------+--------------+----------+--------------+--------+------------+
+|1         |ATL |Hartsfield Jackson Atlanta International Airport|United States |915       |915           |1       |37          |
+|2         |ORD |Chicago O'Hare International Airport            |United States |558       |558           |2       |46          |
+|3         |PEK |Beijing Capital International Airport           |China         |531       |535           |3       |81          |
+|4         |LHR |London Heathrow Airport                         |United Kingdom|525       |527           |4       |86          |
+|5         |CDG |Charles de Gaulle International Airport         |France        |524       |524           |5       |108         |
+|6         |FRA |Frankfurt am Main Airport                       |Germany       |497       |497           |6       |100         |
+|7         |LAX |Los Angeles International Airport               |United States |489       |492           |7       |62          |
+|8         |DFW |Dallas Fort Worth International Airport         |United States |469       |469           |8       |33          |
+|9         |JFK |John F Kennedy International Airport            |United States |456       |456           |9       |74          |
+|10        |AMS |Amsterdam Airport Schiphol                      |Netherlands   |453       |453           |10      |79          |
++----------+----+------------------------------------------------+--------------+----------+--------------+--------+------------+
+only showing top 10 rows
+=== MOUVEMENTS DE RANG (|rank_raw - rank_clean| > 0 parmi les 20 premiers) ===
++----------+----+--------+----------+
+|rank_clean|iata|rank_raw|rank_shift|
++----------+----+--------+----------+
+|14        |MUC |15      |1         |
+|14        |MIA |15      |1         |
+|19        |HKG |20      |1         |
+|19        |ISL |3179    |3160      |
++----------+----+--------+----------+
+
+GOLD OK hubs=3199
+== 2026-11-21 17:20:40 | user-r-combe-tamain-ece | contenu de gold/
+2026-11-21 17:20:29    0 Bytes openflights/gold/hubs/
+2026-11-21 17:20:31   11.5 KiB openflights/gold/hubs/_SUCCESS
+2026-11-21 17:20:31  134.8 KiB openflights/gold/hubs/part-00000-d0cc4942-6ec2-45e6-ade9-070e5ce79a59-c000.snappy.parquet
+== 2026-11-21 17:20:41 | user-r-combe-tamain-ece | FIN 03_gold

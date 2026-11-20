@@ -1,0 +1,42 @@
+== 2026-11-21 17:13:46 | user-r-combe-tamain-ece | DEBUT 02_silver
+== 2026-11-21 17:13:47 | user-r-combe-tamain-ece | silver : Spark nettoie le brut s3://user-r-combe-tamain-ece/openflights/raw/
+WARNING: Using incubator modules: jdk.incubator.vector
+=== RAPPORT QUALITE ===
+{
+  "airports_total": 7698,
+  "airports_iata_null": 1626,
+  "airports_iata_dupliques": 0,
+  "airports_latitude_hors_plage": 0,
+  "airports_longitude_hors_plage": 0,
+  "airports_tz_name_null": 1021,
+  "airlines_total": 6162,
+  "airlines_inactives": 4906,
+  "airlines_active_inconnu": 1,
+  "airlines_iata_absent": 4628,
+  "routes_total": 67663,
+  "routes_src_id_null": 220,
+  "routes_dst_id_null": 221,
+  "routes_airline_id_null": 479,
+  "routes_airline_id_inconnu": 0,
+  "routes_exactement_dupliquees": 0,
+  "routes_src_id_inconnu": 263,
+  "routes_dst_id_inconnu": 267,
+  "routes_src_code_incoherent": 362,
+  "routes_dst_code_incoherent": 365,
+  "routes_codeshare": 14597,
+  "routes_avec_escale": 11,
+  "routes_valides": 66771,
+  "routes_rejetees": 892,
+  "rejet_dst_id_inconnu": 210,
+  "rejet_dst_id_null": 203,
+  "rejet_src_id_inconnu": 259,
+  "rejet_src_id_null": 220
+}
+SILVER OK routes_valides=66771 routes_rejetees=892
+== 2026-11-21 17:14:45 | user-r-combe-tamain-ece | contenu de silver/
+2026-11-21 17:14:37  188.6 KiB openflights/silver/airlines/part-00000-2cf383b8-ef72-4211-896e-fb028d37238e-c000.snappy.parquet
+2026-11-21 17:14:35  424.7 KiB openflights/silver/airports/part-00000-258958c1-6c53-4847-ae14-14220b3278bb-c000.snappy.parquet
+2026-11-21 17:14:44  717 Bytes openflights/silver/quality_report/part-00000-326855e5-e050-4b78-984c-14d3d9a4a1c9-c000.csv
+2026-11-21 17:14:39  473.4 KiB openflights/silver/routes/part-00000-e2c37e35-d14b-4ce3-abfe-c2a12043401c-c000.snappy.parquet
+2026-11-21 17:14:41   16.5 KiB openflights/silver/routes_rejected/part-00000-f99783ff-db98-4423-8c9f-1b2fc823e0c0-c000.snappy.parquet
+== 2026-11-21 17:14:47 | user-r-combe-tamain-ece | FIN 02_silver

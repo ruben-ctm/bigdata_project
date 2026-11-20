@@ -1,0 +1,9 @@
+variante,moteur,format,ms_runs,mediane_ms,min_ms
+"Spark, Parquet, shuffle=200 (defaut)",Spark,Parquet,1464;1536;1315;891;1354,1354,891
+"Spark, CSV brut, shuffle=8",Spark,CSV,967;1419;954;1006;783,967,783
+"Spark, Parquet, shuffle=8",Spark,Parquet,862;597;569;677;588,597,569
+"DuckDB, Parquet",DuckDB,Parquet,15;15;13;13;12,13,12
+"DuckDB, CSV brut",DuckDB,CSV,332;334;333;328;323,332,323
+demarrage session Spark,Spark,-,11233,11233,11233
+taille CSV brut (octets),-,CSV,3901269,3901269,3901269
+taille silver Parquet (octets),-,Parquet,1129655,1129655,1129655
